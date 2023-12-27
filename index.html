@@ -22,6 +22,7 @@
       ">1</button>
       <button class="button" onclick="currentDispaly = currentDispaly + 2; document.querySelector('#display').value = currentDispaly;
       ">2</button>
+      <button class="button" onclick="sin()">sin</button>
     </div>
 
     <div class="buttom-container">
@@ -31,6 +32,7 @@
       ">3</button>
       <button class="button" onclick="currentDispaly = currentDispaly +4; document.querySelector('#display').value = currentDispaly;
       ">4</button>
+      <button class="button" onclick="cos()">cos</button>
     </div>
 
     <div class="buttom-container">
@@ -40,6 +42,7 @@
       ">5</button>
       <button class="button" onclick="currentDispaly = currentDispaly +6; document.querySelector('#display').value = currentDispaly;
       ">6</button>
+      <button class="button" onclick="tan()">tan</button>
     </div>
 
     <div class="buttom-container">
@@ -49,6 +52,7 @@
       ">7</button>
       <button class="button" onclick="currentDispaly = currentDispaly +8; document.querySelector('#display').value = currentDispaly;
       ">8</button>
+
     </div>
 
     <div class="buttom-container">
@@ -61,6 +65,7 @@
       ">=</button>
       <button class="button" onclick="currentDispaly = currentDispaly +9; document.querySelector('#display').value = currentDispaly;
       ">9</button>
+
     </div>
 
     <div class="buttom-container">
@@ -70,12 +75,27 @@
     </div>
 
 
+
+
   </div>
 </body>
 <script>
 
   let currentDispaly = '';
   document.querySelector('#display').value = currentDispaly;
+
+  function sin() {
+    document.querySelector('#display').value = Math.sin(currentDispaly);
+  }
+
+  function cos() {
+    document.querySelector('#display').value = Math.cos(currentDispaly);
+  }
+
+  function tan() {
+    document.querySelector('#display').value = Math.tan(currentDispaly);
+  }
+
 
 
 </script>
